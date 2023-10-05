@@ -1,0 +1,53 @@
+body {
+    background-image: url("images/4343281.jpg");
+    display: flex;
+    justify-content: center; /* Выравниваем по центру по горизонтали */
+    align-items: center; /* Выравниваем по центру по вертикали */
+    height: 100vh; /* Устанавливаем высоту равной высоте видимой области окна браузера */
+    margin: 0; /* Убираем внешние отступы у body */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    font-size: 16px;
+    border: 5px solid white;
+    padding: 30px;
+    color:white;
+    display: flex;
+    background-color: rgb(73, 12, 78);
+}
+.form
+{
+    margin-top: 10px;
+}
+.nazad 
+{
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 5;
+    text-decoration: none;
+}
+a
+{
+    text-decoration: none;
+    border:2px solid white;
+    color:white;
+}
+.form input[type="text"],
+.form input[type="password"]
+
+{
+    width: 20em;
+}
+button
+{
+    width: 20em;
+    
+}
+button:hover , a:hover
+{
+    background-color: rgb(43, 226, 202);
+    transition: 1s ;
+    border-radius: 5px;
+}
