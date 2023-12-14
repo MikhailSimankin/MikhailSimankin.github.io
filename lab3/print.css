@@ -1,0 +1,14 @@
+.header, .footer, .sidebar{
+    display: none;
+}
+.products{
+    justify-content: center;
+    width: 100%;
+}
+.products-header{
+    text-align: center;
+}
+.action, .btn{
+    border: 1px solid black;
+    color: black;
+}
