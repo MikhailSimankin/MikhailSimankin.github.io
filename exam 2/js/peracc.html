@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Экскурсии по Москве</title>
+        <!-- Подключение Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylemain.css">
+        <script src="script.js"></script>
+    
+    </head>
+    <body>
+    
+        <!-- Шапка сайта -->
+        <header class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Логотип</a>
+                <nav class="navbar navbar-expand">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Область для всплывающих уведомлений -->
+        <div class="container-fluid mt-4">
+            <div id="notificationContainer">
+            </div>
+        </div>
+        <!-- Таблица -->
+        <div class="container mt-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">№</th>
+                        <th scope="col">Название маршрута</th>
+                        <th scope="col">Дата</th>
+                        <th scope="col">Стоимость</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
