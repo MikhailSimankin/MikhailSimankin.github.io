@@ -4,6 +4,9 @@ let move = 0;
 let countClick = 0;
 let flagFinish = false;
 
+//Функция newGame очищает игровое поле от предыдущих ходов
+//сбрасывает счётчики и переменные состояния
+//готовя игру к новому раунду
 function newGame(event) {
     let p = document.querySelectorAll('.pole');
     for (let i = 0; i < 9; i++) {
@@ -14,6 +17,7 @@ function newGame(event) {
     flagFinish = false;
 }
 
+// Функция game создаёт игровое поле для крестиков ноликов
 function game() {
     let board = document.getElementById('board');
     for (let i = 0; i < 9; i++) {
@@ -26,6 +30,7 @@ let button = document.querySelector('.btn1');
 button.addEventListener('click', newGame);
 let mes = document.querySelector('.messages');
 
+//Функция message вывод сообщений и удаление через время
 function message (text, category = "success") {
     let div = document.createElement('div');
     div.classList.add("message");
@@ -37,7 +42,8 @@ function message (text, category = "success") {
     }, 4000);
 }
 
-
+//Функция checkWinRow проверяет каждую строку на игровом поле
+// и определяет, есть ли в них победитель
 function checkWinRow() {
     let flagFoundWinner;
     let p = document.querySelectorAll('.pole');
@@ -61,6 +67,8 @@ function checkWinRow() {
     }
 }
 
+//Функция checkWinColumn проверяет каждый столбец на игровом поле
+//и определяет, есть ли в них победитель
 function checkWinColumn() {
     let flagFoundWinner;
     let p = document.querySelectorAll('.pole');
@@ -84,6 +92,8 @@ function checkWinColumn() {
     }
 }
 
+// Функция checkWinMainDiagonal используется для проверки главной диагонгали
+// и определения, есть ли в ней победитель.
 function checkWinMainDiagonal() {
     let flagFoundWinner;
     let p = document.querySelectorAll('.pole');
@@ -104,6 +114,8 @@ function checkWinMainDiagonal() {
     }
 }
 
+//Функция checkWinAddDiagonal используется для проверки второстепенных диагоналей.
+//и определения, есть ли в них победитель.
 function checkWinAddDiagonal() {
     let flagFoundWinner;
     let p = document.querySelectorAll('.pole');
@@ -126,6 +138,8 @@ function checkWinAddDiagonal() {
     }
 }
 
+//Функция click обеспечивает логику хода 
+// и определение победителя или ничьи в игре.
 window.onload = game;
 function click(event) {
     let winner;
