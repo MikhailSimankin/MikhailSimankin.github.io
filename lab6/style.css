@@ -1,0 +1,31 @@
+.custom-bg-body {
+    background: radial-gradient(
+        circle at 50% 0,
+        rgb(199, 211, 28),
+        rgba(0, 204, 255, 0.747) 70.71%
+      ),
+      radial-gradient(
+        circle at 6.7% 75%,
+        rgba(0, 0, 255, 0.5),
+        rgba(0, 0, 255, 0) 70.71%
+      ),
+      radial-gradient(
+          circle at 93.3% 75%,
+          rgba(255, 255, 255, 0.5),
+          rgba(0, 255, 0, 0) 70.71%
+        ) beige;
+  }
+   
+
+  .custom-text-color {
+    background: lightseagreen;
+  }
+
+  .footer{
+    color: rgb(240, 240, 240);
+    background-color: rgba(17, 45, 136, 0.911);
+    padding: 1.25rem;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+  }
